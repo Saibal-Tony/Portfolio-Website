@@ -5,6 +5,7 @@
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <TITLE>Saibal Site</TITLE>
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/3aaef69494.js" crossorigin="anonymous"></script>
 </HEAD>
 <BODY>
     <div id="header">
@@ -37,26 +38,53 @@
                     <h1 class="sub_title">About me</h1>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima laboriosam rerum, distinctio minus eum omnis totam praesentium exercitationem. Quaerat voluptate nisi eum alias voluptates deserunt magnam, quisquam, sint placeat soluta laboriosam atque corporis assumenda dolore quo quos quibusdam praesentium quia consectetur obcaecati iure consequatur? Similique maxime, architecto vel voluptatibus corrupti odit magnam cupiditate sit excepturi! Quaerat nisi soluta et animi mollitia non eius tenetur placeat necessitatibus ullam fuga at, impedit eum totam earum numquam nostrum, molestiae a temporibus ex, neque fugiat commodi possimus similique. Nobis quia voluptates ducimus sunt. Neque, dolores. Ab asperiores, ad eaque quam earum sapiente minus dolore.</p>
                     <div class="tab_titles">
-                        <p class="tab-links active-link">Skills</p>
-                        <p class="tab-links">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
                     <!-- contents -->
-                    <div class="tab-contents active-tab">
+                    <div id="skills" class="tab-contents active-tab">
                         <ul>
                             <li><Span>Java</Span><br>Problem Solving</li>
                             <li><Span>Frontend Web Development</Span><br>Building Websites</li>
                             <li><Span>ML</Span><br>Traing custom models</li>
                         </ul>
                     </div>
-                    <div class="tab-contents"></div>
+                    <div id="education" class="tab-contents">
                         <ul>
-                            <li><Span>2024</Span><br>B.Tech fromNarula Institute of Technology</li>
-                            <li><Span>2019</Span><br>10+2 from Kendriya Vidyalaya Command Hospital</li>
+                            <li><Span>2020 - 2024</Span><br>B.Tech fromNarula Institute of Technology</li>
+                            <li><Span>2018 - 2019</Span><br>(10+2) from Kendriya Vidyalaya Command Hospital</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- ------------------------------- Services ------------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub_title">My Projects</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Real Time Object Detection For Assisting Communication In Non-Verbal Individual</h2>
+                    <p>I have worked on a ML based project where the camera feeds take the hand detection and display shows the result of it . It's was designed to help non-verbal people to communicate with the people more easily.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <h2>Shopping Website</h2>
+                    <p>I designed a shopping website for the people to see products and buy them with ease.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-laptop-code"></i>
+                    <h2>SRGAN Model</h2>
+                    <p>I designed a model which takes low resolution image and improves its picture quality, making it a high resolution image so that the user can use it.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <script src="script.js"></script>
 </BODY>
 </HTML>
