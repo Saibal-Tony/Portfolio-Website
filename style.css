@@ -64,7 +64,30 @@ nav ul li a:hover::after{
     margin-top: 20px;
     /* padding: 0 0 100px 0; */
 }
-.header-text h1 span{
+.header-text h2{
+    margin-top: 19px;
+}
+.header-text p:nth-child(2){
+    font-size: 70px;
+    margin-top: 10px;
+}
+.header-text p:nth-child(3){
+    font-size: 60px;
+    margin-top: 5px;
+}
+.header-text p:nth-child(4){
+    font-size: 50px;
+}
+.header-text p:nth-child(5){
+    font-size: 43px;
+}
+.header-text p:nth-child(6){
+    font-size: 34px;
+}
+.header-text p:nth-child(7){
+    font-size: 25px;
+}
+.header-text p span{
     color: #cb6ce6;
 }
 
@@ -93,6 +116,7 @@ nav ul li a:hover::after{
     font-size: 60px;
     font-weight: 600;
     color: #fff;
+    margin-bottom: 50px;
 }
 .tab_titles{
     display: flex;
@@ -170,4 +194,108 @@ nav ul li a:hover::after{
 .services-list div:hover{
     background: #cb6ce6;
     transform: translateY(-10px);
+}
+/* -------------------------Projects-------------------------- */
+#projects{
+    padding: 50px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+.layer{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.6) , #cb6ce6);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:  0 40px;
+    text-align: center;
+    font-size: 14px;
+}
+.layer h3{
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: #cb6ce6;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.layer a img{
+    width: 40px;
+    height: 40px;
+    align-items: center;
+}
+
+/* ------------------------ skills ------------------------- */
+#portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: #262626; */
+}
+#portfolio .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 273px);
+    grid-template-rows: repeat(3, 164px);
+    gap: 20px;
+    perspective: 1000px;
+}
+#portfolio .grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #979797;
+    padding: 10px;
+    transition: background-color 0.5s ease, transform 0.5s ease, box-shadow 0.5s ease;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateZ(0) scale(1);
+}
+#portfolio .grid-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+#portfolio .image-name {
+    font-size: 17px;
+    color: #fff;
+    text-align: center;
+}
+#portfolio .grid-item:hover {
+    background-color: #cb6ce6;
+    transform: translateZ(50px) scale(1.1);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3);
 }
