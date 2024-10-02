@@ -238,6 +238,9 @@ nav ul li a:hover::after{
     margin-bottom: 20px;
 }
 .layer a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 20px;
     color: #cb6ce6;
     text-decoration: none;
@@ -249,12 +252,27 @@ nav ul li a:hover::after{
     border-radius: 50%;
     text-align: center;
 }
-.layer a img{
+.link-tag{
     width: 40px;
     height: 40px;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
 }
-
+.vertical-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+.link-tag img {
+    width: 80%;  /* Reduce image size to 80% */
+    height: 80%; /* Reduce image size to 80% */
+    object-fit: contain;
+}
 /* ------------------------ skills ------------------------- */
 #portfolio {
     display: flex;
