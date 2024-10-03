@@ -13,13 +13,15 @@
         <div class="container">
             <nav>
                 <img src="images/name_black_1.png" width="280vw" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Project</a></li>
+                    <li><a href="#portfolio">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <img class="fas" src="images/icons8-cross-100-white.png" onclick="closemenu()">
                 </ul>
+                <img class="fas" src="images/icons8-menu-150 -white.png" onclick="openmenu()">
             </nav>
             <div class="header-text">
                 <p>Hi , there</p>
@@ -32,7 +34,30 @@
             </div>
         </div>
     </div>
-
+    <!-- ------------------------Sticky tab---------------------- -->
+    <div class="sticky-sidebar">
+        <div class="sidebar-item li">
+            <a href="https://www.linkedin.com/in/thesaibalbera20/" target="_blank" class="tab-link">
+                <img src="images/icons8-linkedin-48.png" alt="LinkedIn">
+            </a>
+        </div>
+        <div class="sidebar-item git">
+            <a href="https://github.com/Saibal-Tony" target="_blank" class="tab-link">
+                <img src="images/icons8-github-256.png" alt="GitHub">
+            </a>
+        </div>
+        <div class="sidebar-item resume">
+            <a href="Document/SAIBAL's Resume.pdf" target="_blank" class="tab-link">
+                <img src="images/icons8-resume-100.png" alt="Resume">
+            </a>
+        </div>
+        <div class="sidebar-item email">
+            <a href="mailto:berasaibal20@gmail.com" class="tab-link">
+                <img src="images/icons8-email-100-black.png" alt="Email">
+            </a>
+        </div>
+    </div>
+    
     <!-- ------------------about--------------------- -->
     <div id="about">
         <div class="container">
@@ -112,8 +137,10 @@
                     <div class="layer">
                         <h3>Image Quality Enhancement</h3>
                         <p>I developed a model that takes low-resolution images and enhances their quality, transforming them into high-resolution images for users to utilize effectively.</p>
-                        <a class="link-tag" href="#"><img src="images/icons8-link-100.png" alt="link"></a>
-                        <a class="link-tag" href="#"><img src="images/icons8-code-64.png" alt="code"></a>
+                        <div class="vertical-container">
+                            <a class="link-tag" href="#"><img src="images/icons8-link-100.png" alt="link"></a>
+                            <a class="link-tag" href="#"><img src="images/icons8-code-64.png" alt="code"></a>
+                        </div>
                     </div>
                 </div>
                 <div class="work">
@@ -121,11 +148,14 @@
                     <div class="layer">
                         <h3>Shopping Website</h3>
                         <p>I created a shopping website that allows users to easily browse products and make purchases, enhancing their online shopping experience with a user-friendly interface.</p>
-                        <a class="link-tag" href="#"><img src="images/icons8-link-100.png" alt="link"></a>
-                        <a class="link-tag" href="#"><img src="images/icons8-code-64.png" alt="code"></a>
+                        <div class="vertical-container">
+                            <a class="link-tag" href="#"><img src="images/icons8-link-100.png" alt="link"></a>
+                            <a class="link-tag" href="#"><img src="images/icons8-code-64.png" alt="code"></a>
+                        </div>
                     </div>
                 </div>
-            </div>        
+            </div>
+            <a href="#" class="btn">See More</a>        
         </div>
      </div>
     <!-- --------------------- Skills ---------------------- -->
@@ -140,6 +170,10 @@
                 <div class="grid-item">
                     <img src="images/icons8-mysql-144.png" alt="MySQL">
                     <div class="image-name">MySQL</div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/icons8-python-144.png" alt="Python">
+                    <div class="image-name">Python</div>
                 </div>
                 <div class="grid-item">
                     <img src="images/icons8-html-144.png" alt="HTML">
@@ -158,10 +192,6 @@
                     <div class="image-name">TensorFlow</div>
                 </div>
                 <div class="grid-item">
-                    <img src="images/icons8-python-144.png" alt="Python">
-                    <div class="image-name">Python</div>
-                </div>
-                <div class="grid-item">
                     <img src="images/icons8-git-144.png" alt="Git">
                     <div class="image-name">Git</div>
                 </div>
@@ -172,7 +202,32 @@
             </div>
         </div>
     </div>
-    
+    <!-- ------------------------------contact-------------------------------- -->
+    <div id="contact">
+        <div class="contaimer">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <!-- <a href="berasaibal20@gmail.com">berasaibal20@gmail.com</a> -->
+                    <p><img class="img-icon1" src="images/icons8-email-100.png" alt="email"><a href="mailto:berasaibal20@gmail.com">berasaibal20@gmail.com </a></p> 
+                    <p><img class="img-icon1" src="images/icons8-phone-100-black.png" alt="phone"><a href="tel:+919330088687"> +91 9330088687</a></p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100010075153053"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/_tony_warhead_01_/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </BODY>
 </HTML>
